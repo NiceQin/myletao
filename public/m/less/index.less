@@ -1,0 +1,117 @@
+@bgc: #006699;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    height: 100%;
+}
+// 顶部
+.topbar {
+    background-color: @bgc;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+
+    .fa-search {
+       position: absolute;
+       top: 15px;
+       right: 15px;
+       color: #fff;
+    }
+}
+// 导航
+nav {
+    padding: 10px;
+    
+    img {
+        width: 100%;
+    }
+}
+//广告
+#banner {
+    // border: 1px solid #999;
+    padding: 0 10px;
+    img {
+        width: 100%;
+    }
+}
+//品牌
+#brand {
+    .title {
+        width: 100%;
+       
+    }
+    img {
+        width: 100%
+    }
+}
+//运动
+#sport,#women,#man {
+    .title {
+        img {
+            width: 100%;
+        }
+    }
+    >.mui-row {
+        padding: 5px;
+        >a {
+            text-align: center;
+            display: block;
+            padding: 5px;
+            box-shadow: 0 0 3px #ccc;
+            >img {
+                width: 100%;
+            }
+            >p {
+
+            }
+            >div {
+
+                span {
+                    color: red;
+                    margin-right: 5px;
+                }
+                del {
+                    color: #999;
+                }
+            }
+           
+        }
+    }
+}
+//底部
+#footer {
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: @bgc;
+    z-index: 99;
+    
+    a{
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+       padding: 10px;
+
+        span {
+            display: block;
+            font-size: 12px;
+        }
+    }
+}
+.main {
+    padding: 45px 0;
+    // height: 100%;
+}
