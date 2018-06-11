@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myletao</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/search.less">
+    <script src="./lib/less/less.js"></script>
+
+</head>
+
+<body>
+    <header class="topbar">
+        <span>搜索中心</span>
+        <a href="" class="icon_back fa fa-arrow-left"></a>
+    </header>
+
+   
+            <div class="main">
+                <div class="search-form">
+                    <form action="#">
+                        <input type="text" class="input-search" placeholder="请输入要搜索的商品">
+                        <a href="#" class="mui-btn mui-btn-primary btn-search">搜索</a>
+                    </form>
+                    <div class="history">
+                        <div class="title mui-clearfix">
+                            <span class="mui-pull-left">搜索记录</span>
+                            <a class="mui-pull-right fa fa-trash " href="">清空搜索记录</a>
+                        </div>
+                        <ul class="content">
+                           
+                        </ul>
+                    </div>
+                </div>
+               
+
+    <footer id="footer">
+        <div class="mui-row">
+            <a href="./index.html" class="fa fa-home mui-col-xs-3">
+                <span>首页</span>
+            </a>
+            <a href="./category.html" class="fa fa-bars mui-col-xs-3">
+                <span>分类</span>
+            </a>
+            <a href="#" class="fa fa-shopping-cart mui-col-xs-3">
+                <span>购物车</span>
+            </a>
+            <a href="#" class="fa fa-user mui-col-xs-3">
+                <span>会员中心</span>
+            </a>
+        </div>
+    </footer>
+    <!-- 顶部 -->
+
+    <!-- 引入的js -->
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="js/search.js"></script>
+    <script type="text/html" id="search">
+        {{each rows as value i}}
+            <li>
+                <a href="#">
+                    <span>{{value.search}}</span>
+                    <span  class="fa fa-times btn-delete"></span>
+                </a>
+             
+            </li>                  
+        {{/each}}
+    </script>
+</body>
+
+</html>

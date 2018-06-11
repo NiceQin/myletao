@@ -30,7 +30,7 @@ body {
     z-index: 99;
     width: 100%;
 
-    .fa-search {
+    a {
        position: absolute;
        top: 15px;
        right: 15px;
@@ -57,10 +57,98 @@ body {
             display: block;
             font-size: 12px;
         }
+        &.active {
+            color: orange;
+        }
     }
 }
 //主体
 .main {
     padding: 45px 0;
     // height: 100%;
+}
+//商品列表
+.pro {
+        padding: 5px;
+        >a {
+            text-align: center;
+            display: block;
+            padding: 5px;
+            box-shadow: 0 0 3px #ccc;
+            >img {
+                width: 100%;
+            }
+            >p {
+
+            }
+            >div {
+
+                span {
+                    color: red;
+                    margin-right: 5px;
+                }
+                del {
+                    color: #999;
+                }
+            }
+           
+        }
+    }
+// 搜索表单的公共样式
+.search-form {
+    >form {
+        padding: 10px;
+        position: relative;
+        padding-right: 64px;
+    .input-search {
+         height: 33px;
+            font-size: 12px;
+            border-color: @bgc;
+            /* 把输入框右上角右下角圆角去掉 */
+            border-radius: 3px 0px 0px 3px;
+            margin-bottom: 0;
+    }
+    .btn-search {
+        position: absolute;
+            right:10px;
+            top: 10px;
+            background-color: @bgc;
+            border-color: @bgc;
+            /* 把按钮左上角左下角的圆角去掉 */
+            border-radius: 0px 3px 3px 0px;
+    }
+    }
+   
+    .history {
+        padding:0 10px;
+        .title {
+            span {
+                font-size: 12px;
+            }
+            a {
+                font-size: 12px;
+                color: #666;
+            }
+        }
+        .content {
+            li {
+                padding: 0 10px;
+                border: 1px solid #ccc;
+               
+                position: relative;
+                
+                a {
+                    color: #000;
+                     line-height: 30px;
+                     font-size: 12px;
+                    .btn-delete {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+	
+    }
 }
