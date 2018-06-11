@@ -16,8 +16,7 @@ coverage
 
 # nyc test coverage
 .nyc_output
-电商项目.md
-README.md
+
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -47,3 +46,5 @@ node_modules
 # 忽略私密文件  文件名就直接写文件名.扩展名
 
 我的私密文件.avi
+电商项目.md
+README.md
