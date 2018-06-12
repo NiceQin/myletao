@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myletao</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/productBuy.less">
+    <script src="./lib/less/less.js"></script>
+
+</head>
+
+<body>
+    <header class="topbar">
+        <span>商品详情</span>
+        <a href="" class="icon_back fa fa-arrow-left"></a>
+        <a href="" class="icon_home fa fa-home"></a>
+    </header>
+
+
+    <div class="main">
+        <section id="slide">
+            <div class="mui-slider">
+                
+            </div>
+        </section>
+        <div class="proInfo">
+          
+        </div>
+    </div>
+    <footer class="buy">
+        <a href="#" class="btn_cart fa fa-shopping-cart"></a> 
+        <div>
+            <a href="#" class="mui-btn mui-btn-danger" add-car>加入购物车</a>
+            <a href="#" class="mui-btn mui-btn-warning btn-buy">立即购买</a>
+        </div>
+    </footer>
+     
+
+        <!-- 引入的js -->
+        <script src="./lib/mui/js/mui.min.js"></script>
+        <script src="./lib/zepto/zepto.min.js"></script>
+        <script src="./lib/artTemplate/template.js"></script>
+        <script src="js/productBuy.js"></script>
+        <script type="text/html" id="title">
+               
+            <p class="title">{{proName}}</p>
+            <div class="price">
+                价格:
+                <span class="new">¥{{price}}</span>
+                <del class="old">¥{{oldPrice}}</del>
+            </di>
+           
+        </div>
+        <div class="size">
+            <span>尺码:</span>
+            {{each size as value i}}
+            <span class="num">{{value}}</span>
+            {{/each}}
+        </div>
+        <div class="product-num">
+            数量：
+            <span class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='{{num}}'>
+                <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                <input value="0" class="mui-numbox-input" type="number" />
+                <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+            </span>
+            剩余：
+            <span>{{num}}</span>件
+        </div>        
+        </script>
+        <script type="text/html" id="slides">
+         <div class="mui-slider-group mui-slider-loop">
+            {{each pic as value i}}
+                
+                {{if i == 0}}
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#"><img src="{{pic[pic.length-1].picAddr}}" /></a>
+                    </div>  
+                {{/if}}
+                <div class="mui-slider-item">
+                    <a href="#"><img src="{{value.picAddr}}" /></a>
+                </div>  
+               
+                {{if i == pic.length-1}}
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#"><img src="{{pic[0].picAddr}}" /></a>
+                    </div>  
+                {{/if}}          
+            {{/each}}           
+        </div>
+        
+        <div class="mui-slider-indicator">
+             {{each pic as value i}}
+               
+                <div class="mui-indicator {{i == 0 ? 'mui-active' : ''}}"></div>
+             {{/each}}   
+        </div>
+        
+        </script>
+        
+</body>
+
+</html>

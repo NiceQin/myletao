@@ -44,7 +44,7 @@ Letao.prototype = {
             window.localStorage.setItem('data',JSON.stringify(arr));
             
             letao.queryHistory();
-            window.location.href = 'list.html';
+            window.location.href = 'product.html?search='+val;
           })
       },
    
