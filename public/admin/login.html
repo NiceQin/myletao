@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>我的乐淘后台管理登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>登陆页</title>
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet/less" href="./less/login.less">
+	<script src="./lib/less/less.js"></script>
 </head>
+
 <body>
-	我的乐淘后台管理登录页面
+	<section>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-1 control-label glyphicon glyphicon-user"></label>
+				<div class="col-sm-11">
+					<input type="text" class="form-control user" id="inputEmail3" placeholder="用户名">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-1 control-label glyphicon glyphicon-zoom-in
+"></label>
+				<div class="col-sm-11">
+					<input type="password" class="form-control password" id="inputPassword3" placeholder="密码">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-1 col-sm-10">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> 记住密码
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<a tabindex="0"  class="btn btn-primary btn-login" role="button" data-toggle="popover" data-trigger="focus"
+					    title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"> 登陆</a>
+				</div>
+			</div>
+		</form>
+	</section>
+
+	<script src="./lib/jquery/jquery.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.js"></script>
+	<script src="./lib/artTemplate/template.js"></script>
+	<script src="./js//login.js"></script>
 </body>
+
 </html>

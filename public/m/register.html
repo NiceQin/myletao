@@ -9,7 +9,7 @@
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/login.less">
+    <link rel="stylesheet/less" href="less/register.less">
     <script src="./lib/less/less.js"></script>
 
 </head>
@@ -33,15 +33,20 @@
             </div>
             <div class="mui-input-row">
                 <label>密码</label>
-                <input type="password" class="mui-input-password password" placeholder="请输入密码">
+                <input type="password" class="mui-input-password password" placeholder="密码">
             </div>
             <div class="mui-input-row">
                 <label>密码</label>
-                <input type="password" class="mui-input-password password2" placeholder="再次输入密码">
+                <input type="password" class="mui-input-password password2" placeholder="确认密码">
+            </div>
+            <div class="mui-input-row">
+                <label>验证码</label>
+                <input type="text" class=" vcode" placeholder="验证码">
+                <a class="mui-btn mui-btn-primary btn-vcode">验证码</a>
             </div>
             <div class="mui-button-row">
                
-                <a href="#" type="button" class="mui-btn mui-btn-danger">立即注册</a>
+                <a href="#" type="button" class="mui-btn mui-btn-primary register">立即注册</a>
             </div>
         </form>
     </div>
@@ -69,7 +74,7 @@
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/zepto/zepto.min.js"></script>
     <script src="./lib/artTemplate/template.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 
 </body>
 
